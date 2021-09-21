@@ -118,12 +118,16 @@ local function GetStateDisplay(state)
         display = "Attack(3)"
     elseif state == 0x08 then
         display = "Casting"
+    elseif state == 0x09 then
+        display = "PB Startup"
     elseif state == 0x0A then
         display = "Recoil"
     elseif state == 0x0E then
         display = "Knocked Down"
     elseif state == 0x0F then
         display = "Dead"
+    elseif state == 0x13 then
+        display = "Photon Blast"
     elseif state == 0x14 then
         display = "Teleporting"
     elseif state == 0x17 then
